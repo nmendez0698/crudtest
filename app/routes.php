@@ -28,4 +28,6 @@ Route::get('/', function()
 
 //Funciones
 Route::post('users/create', 'UserController@crearUser');
+Route::post('users/update', 'UserController@updateUser');
 Route::get('users/delete/{id}', 'UserController@borrarUser');
+Route::get('users/edit/{id}', 'UserController@editUser');
