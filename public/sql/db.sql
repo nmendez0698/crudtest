@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `scclicks_wp_dbtest`
+-- Base de datos: `scclicks_dblaravel`
 --
 CREATE DATABASE IF NOT EXISTS `scclicks_wp_dbtest` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 USE `scclicks_wp_dbtest`;
