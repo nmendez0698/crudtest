@@ -18,7 +18,7 @@ Route::get('/', function()
 
 //Vista usuarios
 
-Route::get('users', function()
+Route::get('/', function()
 {
 	$users = User::all();
  
@@ -28,3 +28,4 @@ Route::get('users', function()
 
 //Funciones
 Route::post('users/create', 'UserController@crearUser');
+Route::get('users/delete/{id}', 'UserController@borrarUser');

@@ -22,7 +22,10 @@
 				<td>{{ $user->email }}</td>
 				<td>{{ $user->phone }}</td>
 				<td>{{ $user->created_at }}</td>
-				<td></td>
+				<td>
+					<a href="users/edit/{{ $user->id_user }}"><button type="button" class="btn btn-primary">Editar</button></a>
+					<a href="users/delete/{{ $user->id_user }}"><button type="button" class="btn btn-danger">Eliminar</button></a>
+				</td>
 			</tr>
 		@endforeach
 		</tbody>

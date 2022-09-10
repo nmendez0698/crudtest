@@ -14,8 +14,14 @@ class UserController extends BaseController {
         $user->pass = Input::get('contra');
         $user->phone = Input::get('tel');
         $user->save();
-        return Redirect::to('users');
-}
+        return Redirect::to('/');
+    }
+
+    public function borrarUser($id)
+    {
+        $user = User::where('id_user', $id)->delete();
+        return Redirect::to('/');
+    }
  
 }
 ?>
