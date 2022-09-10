@@ -16,6 +16,8 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+//Vista usuarios
+
 Route::get('users', function()
 {
 	$users = User::all();
@@ -23,3 +25,6 @@ Route::get('users', function()
     return View::make('users')->with('users', $users);
     // return View::make('users');
 });
+
+//Funciones
+Route::post('users/create', 'UserController@crearUser');
